@@ -116,7 +116,7 @@ The framework utilizes a sequential multi-agent debate loop to neutralize indivi
 ### 1. Clone & Install Dependencies
 ```bash
 git clone https://github.com
-cd YOUR_REPO_NAME
+cd Multi-Agent-AI-Investment-Committee
 pip install streamlit crewai yfinance pandas numpy groq langchain-openai pyngrok litellm arch
 ```
 
