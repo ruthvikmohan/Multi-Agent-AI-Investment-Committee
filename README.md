@@ -34,7 +34,10 @@ The calculated conditional variance is annualized over standard market profiles:
 ```
 
 ### 2. Risk Exposure Containment: 95% Historical Value-at-Risk (VaR)
-To establish structural portfolio allocation ceilings, the system calculates the 1-Day Historical Value-at-Risk at a \(c = 0.95\) confidence threshold. Given a vector of daily log returns \(R_t = \ln(P_t / P_{t-1})\), the metric isolates the fifth percentile boundary:
+To establish structural portfolio allocation ceilings, the system calculates the 1-Day Historical Value-at-Risk at a \(c = 0.95\) confidence threshold. Given a vector of daily log returns 
+```math
+\(R_t = \ln(P_t / P_{t-1})\), the metric isolates the fifth percentile boundary:
+```
 
 ```math
 \text{VaR}_{95\%} = - \text{Percentile}\left(R_t, 5\right) \times 100
